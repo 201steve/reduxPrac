@@ -1,0 +1,19 @@
+@mixin style() {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #eee;
+  border-radius: 5px;
+}
+
+.my-alert {
+  @include style;
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.my-alert2 {
+  @extend .my-alert;
+  background-color: #ffe591;
+}
